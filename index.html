@@ -10,6 +10,7 @@
         div{
             float: left;
             position: relative;
+            width:10%;
         }
     </style>
 </head>
@@ -17,15 +18,22 @@
 
      
     
-    <div id="example-outer" style="width: 20%; border: 2px solid black;">100</div>
-    <div style="width: 20%;  height: 95vh; border: 2px solid green;">95</div>
-    <div style="width: 20%;  height: 96vh; border: 2px solid yellow;">96</div>
-    <div style="width: 20%;  height: 98vh; border: 2px solid red;">98</div>
+    <div id="outer" style=" border: 2px solid black;">98</div>
+    <div id="outer1" style=" border: 2px solid black;">96</div>
+    <div id="outer2" style=" border: 2px solid black;">94</div>
+    
+    <div style=" height: 90vh; border: 2px solid purple;">90</div>
+    <div style=" height: 92vh; border: 2px solid blue;">92</div>
+    <div style=" height: 95vh; border: 2px solid green;">95</div>
+    <div style=" height: 96vh; border: 2px solid yellow;">96</div>
+    <div style=" height: 98vh; border: 2px solid red;">98</div>
       
     <script>
         $(function(){
             var vh = $(window).height()/100;
-             $('#example-outer').css('height', 100*vh)
+             $('#outer').css('height', 98*vh)
+            $('#outer1').css('height', 96*vh)
+            $('#outer2').css('height', 94*vh)
         })
 
     </script>
