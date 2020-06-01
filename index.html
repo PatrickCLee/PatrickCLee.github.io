@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+ 
+</head>
+<body>
+
+     
+    
+    <div id="example-outer" style="width: 50%; border: 2px solid black;">
+        <div style="width: 70%; height: 20%; margin: 17%; border: 2px solid black;">element1</div>
+        <div style="width: 70%; height: 20%; margin: 17%; border: 2px solid black;">element2</div>
+        <div style="width: 70%; height: 20%; margin: 17%; border: 2px solid black;">element3</div>
+    </div>  
+    <script>
+        $(function(){
+            var vh = $(window).height()/100;
+             $('#example-outer').css('height', 30*vh)
+        })
+
+    </script>
+</body>
+</html>
